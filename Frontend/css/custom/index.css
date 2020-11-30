@@ -1,0 +1,205 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
+  .side-menu {
+    font-family: 'Stratum1WebBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 60px;
+    list-style-type: none;
+    background: #00212c;
+    color: #809096;
+    overflow: hidden;
+    transition: 0.2s all cubic-bezier(0.645, 0.045, 0.095, 1);
+    z-index: 1000;
+  }
+  
+  .side-menu:hover {
+    width: 300px;
+  }
+  
+  .side-menu li {
+    width: 300px;
+  }
+  
+  .side-menu li span {
+    font-size: 1rem;
+    margin: 20px 30px 0 22px;
+  }
+  
+  .side-menu li a {
+    display: block;
+    font-size: .9rem;
+    text-decoration: none;
+    color: #FFF;
+    height: 60px;
+  }
+  
+  .side-menu li a:hover,
+  .side-menu li:first-child a {
+    background: #14081d;
+    display: block;
+
+  }
+
+  /* scroll icon on home */
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%
+}
+.icon-scroll {
+    width: 30px;
+    height: 50px;
+    margin-left: -20px;
+    bottom: 10px;
+    margin-top: -35px;
+    border: 2px solid #fff;
+    border-radius: 25px
+}
+@media (max-width: 767px) {
+    .icon-scroll {
+        position: relative
+    }
+}
+.icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll
+}
+@keyframes scroll {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(26px)
+    }
+}
+
+/*  */
+section {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+	overflow: hidden;
+	margin: 0;
+	font-family: "Limelight", sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+.well {
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s cubic-bezier(0.51, 0.65, 0, 0.81);
+}
+
+.well .panel video {
+  width: 185vh;
+  position: relative;
+  height: 100vh;
+}
+
+.well .panel .videoOverlay {
+  position: absolute;
+  z-index: 1;
+  background: #0000008c;
+  color: white;
+  font-family: 'Stratum1WebBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  top: 19%;
+  width: 68%;
+  padding: 10px;
+  left: 70px;
+}
+
+
+.top {
+	font-size: 80%;
+	color: hsla(0, 0%, 100%, .25);
+	position: relative;
+	top: -.2em;
+	cursor: pointer;
+}
+
+.panel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	font-size: 10vmin;
+	padding: 0em;
+  box-sizing: border-box;
+  text-align: center;
+	color: hsla(0, 0%, 100%, .1);
+	cursor: default;
+}
+
+.panel:nth-child(1) {
+	background: #012345;
+}
+
+.panel:nth-child(2) {
+	background: #123456;
+}
+
+.panel:nth-child(3) {
+	background: #234567;
+}
+
+.panel:nth-child(4) {
+	background: #345678;
+}
+
+.panel:nth-child(5) {
+	background: #456789;
+}
